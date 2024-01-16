@@ -1,0 +1,90 @@
+.c-container {
+  margin-top: 10rem;
+}
+
+.c-container .image-container {
+  border: 8px solid rgba(232, 232, 232, 93%);
+}
+
+.contactModes {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contactModes .row {
+  gap: 1.5rem;
+}
+
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.detailContainer {
+  gap: 2rem;
+}
+
+.icon {
+  background: rgb(238, 238, 255);
+  color: var(--blue);
+  border-radius: 8px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button {
+  margin-top: 1rem;
+  background: rgb(238, 238, 255);
+  color: var(--blue);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 14rem;
+}
+
+.button:hover {
+  background: var(--blue-gradient);
+  color: var(--secondary);
+}
+
+.detail > :nth-child(1) {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.detail > :nth-child(2) {
+  color: rgb(167, 166, 166);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.mode > :nth-child(1) {
+  width: 100%;
+}
+
+.mode:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow);
+}
+
+.c-left > :nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .c-left {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    flex-direction: column;
+  }
+}

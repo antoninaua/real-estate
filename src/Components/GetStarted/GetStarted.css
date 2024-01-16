@@ -1,0 +1,24 @@
+.start-container {
+  margin-top: 10rem;
+}
+
+.inner-container {
+  border: 3px solid rgb(93, 119, 214);
+  border-radius: 8px;
+  background: var(--blue-gradient);
+  padding: 2rem;
+}
+
+.inner-container > :nth-child(1) {
+  font-weight: 600;
+  color: #ffff;
+}
+
+.inner-container > :nth-child(2) {
+  color: rgb(157, 174, 240);
+  margin-top: 3rem;
+}
+
+.inner-container > :nth-child(3) {
+  color: rgb(157, 174, 240);
+}

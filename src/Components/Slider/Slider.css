@@ -1,0 +1,53 @@
+.s-text {
+  margin-bottom: 2rem;
+}
+
+.s-card {
+  gap: 0.7rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: auto;
+  transition: all 0.3ms ease-in;
+}
+
+.s-card > img {
+  width: 100%;
+  max-width: 15rem;
+}
+
+.s-card > h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.s-card > h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.s-card:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(136, 160, 255, 0.46) 217.91%
+  );
+  box-shadow: 0 72px 49px -51px rgba(136, 160, 255, 0.2);
+}
+
+.btn-container {
+  margin-left: 5rem;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .s-text {
+    text-align: center;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+}

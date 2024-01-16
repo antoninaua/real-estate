@@ -1,0 +1,56 @@
+.v-container {
+  gap: 10rem;
+  margin-top: 10rem;
+}
+
+.v-container .image-container {
+  border: 8px solid rgba(232, 232, 232, 93%);
+}
+
+.accordion-container {
+  min-height: 180px;
+  height: 400px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.active {
+  border: 1px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 0.8rem;
+  box-sizing: border-box;
+}
+
+.default {
+  border: 1px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  width: 40rem;
+  font-size: 1.2rem;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 0.625rem 1.875rem;
+  margin: 1.25rem;
+}
+
+.heading {
+  width: 35rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.v-right > :nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .v-right {
+    align-items: center;
+  }
+
+  .accordion-container {
+    width: 90%;
+  }
+}
