@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import AccordionItem from "./AccordionItem";
 import { list } from "./list";
 import "./Value.css";
 
 const Value = () => {
+
+    const [activeIndex, setActiveIndex] = useState(null);
+    const handleAccordionClick = (index) => {
+      setActiveIndex(index === activeIndex ? null : index);
+    };
   return (
     <section className="v-wrapper">
       <div className="padding innerWidth flexCenter v-container">
@@ -29,6 +35,8 @@ const Value = () => {
                 icon={item.icon}
                 heading={item.heading}
                 detail={item.detail}
+                isActive={index === activeIndex}
+                onClick={() => handleAccordionClick(index)}
               />
             ))}
           </div>

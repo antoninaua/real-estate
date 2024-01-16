@@ -108,8 +108,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="c-left">
-          <div className="image-container">
-            <img src="images/contact.jpg" alt="Home" />
+        <div className="image-container">
+            <img src="images/value.png" alt="Home" />
           </div>
         </div>
       </div>

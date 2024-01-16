@@ -39,7 +39,7 @@ const About = () => {
           </span>
         </div>
         <div className="flexColStart image-container">
-          <img src="images/contact.jpg" alt="Home" />
+          <img src="images/value.png" alt="Home" />
         </div>
       </div>
     </section>

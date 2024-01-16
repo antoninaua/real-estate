@@ -80,6 +80,7 @@
 @media screen and (max-width: 768px) {
   .c-left {
     align-items: center;
+    margin: 1rem;
   }
 }
 

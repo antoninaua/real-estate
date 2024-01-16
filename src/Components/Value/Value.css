@@ -1,6 +1,6 @@
 .v-container {
-  gap: 10rem;
-  margin-top: 10rem;
+  gap: 5rem;
+  margin-top: 5rem;
 }
 
 .v-container .image-container {
@@ -10,6 +10,7 @@
 .accordion-container {
   min-height: 180px;
   height: 400px;
+  transition: height 0.3s ease;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -22,35 +23,61 @@
   cursor: pointer;
   padding: 0.8rem;
   box-sizing: border-box;
+  width: 500px;
+  margin: 1rem 0;
 }
 
 .default {
   border: 1px solid rgba(128, 128, 128, 0.143);
   border-radius: 8px;
-  width: 40rem;
+  width: 500px;
   font-size: 1.2rem;
   color: var(--primary);
   cursor: pointer;
   padding: 0.625rem 1.875rem;
-  margin: 1.25rem;
+  margin: 1rem 0;
 }
 
 .heading {
-  width: 35rem;
-  padding: 2rem;
+  width: 100%;
+  padding: 1rem;
   box-shadow: var(--shadow);
 }
 
 .v-right > :nth-child(2) {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
+
 
 @media screen and (max-width: 768px) {
   .v-right {
+    gap: 2rem;
+    margin-top: 2rem;
     align-items: center;
+    margin: 1rem;
+  }
+
+  .image-container {
+    height: auto;
+    margin: 1rem;
   }
 
   .accordion-container {
-    width: 90%;
+    height: auto;
+  }
+
+  .active,
+  .default {
+    width: 300px; 
+    margin: 1rem 0; 
+  }
+
+  .heading {
+    width: 100%; 
+    padding: 1rem; 
+  }
+
+  .v-right > :nth-child(2) {
+    margin-bottom: 1rem; 
   }
 }
